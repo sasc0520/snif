@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(227, 234, 236);
+  margin: 0;
+}
+
+#overflow_wrapper {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#game {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-self: center;
+}
+
+#game svg {
+  height: 100%;
+}
+
+#snif {
+  background-image: url(svgs/snif.svg);
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#rotation {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(svgs/rotate.svg);
+  background-size: cover;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#music_credit {
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  font-size: .8rem;
+}
+
+#back {
+background-image: url(svgs/\ back.svg);
+background-size: cover;
+width: 10vw;
+height: 10vw;
+position: absolute;
+top: 2vw;
+left: 2vw;
+}
+
+#music_on_off {
+background-image: url(svgs/music.svg);
+width: 7vw;
+height: 7vw;
+position: absolute;
+bottom: 40px;
+left: 1.5vw;
+}
+
+.off {
+  filter: grayscale(1);
+}
+
+/* MEDALS STYLING */
+
+#medal_container {
+  display: flex;
+  position: absolute;
+  top: 6vh;
+  right: 2vw;
+}
+
+.full {
+  height: 6vw;
+  width: 6vw;
+  background-image: url(svgs/goldmedal-01.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 1vw;
+}
+
+.gray {
+  height: 6vw;
+  width: 6vw;
+  background-image: url(svgs/goldmedal-02.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 8px;
+}
+
+#medal_win {
+  width: 40vw;
+  height: 40vw;
+  background-image: url(svgs/win_medal-01.svg);
+  background-size: cover;
+  position: absolute;
+  top: 15vh;
+  left: 30vw;
+}
+
+#hunter {
+  width: 60vw;
+  height: 27vw;
+  background-image: url(svgs/hunter-02.svg);
+  background-size: cover;
+  position: absolute;
+  top: 36vh;
+  left: 100vw;
+}
